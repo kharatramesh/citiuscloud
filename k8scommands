@@ -12,3 +12,9 @@
   230  kubectl logs pod1
   231  kubectl logs pod1 -c pod1
 ========================================================================
+  298  kubectl create deployment dosa --image=nginx --dry-run=client -o yaml
+  299  kubectl create deployment dosa --image=nginx --dry-run=client -o yaml  > dosa.yaml
+  300  vi dosa.yaml
+  301  history
+  302  kubectl run pod5 --image=httpd --dry-run=client -o yaml
+  303  kubectl run pod5 --image=httpd --dry-run=client -o yaml > pod5.yaml
