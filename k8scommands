@@ -1,0 +1,14 @@
+ 219  kubectl run samosa --image=docker.io/nginx
+  220  kubectl get pods
+  221  kubectl get pods -o wide
+  222  kubectl delete pod samosa
+  223  kubectl describe pod pod2
+  224  clear
+  225  kubectl get pods
+  226  kubectl exec -it pod1 bash
+  227  # kubectl exec -it pod1 -c c1  bash
+  228  # kubectl exec -it pod1 -c c2  bash
+  229  kubectl exec -it pod1 -c pod1 bash
+  230  kubectl logs pod1
+  231  kubectl logs pod1 -c pod1
+========================================================================
