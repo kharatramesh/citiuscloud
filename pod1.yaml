@@ -1,0 +1,26 @@
+[root@master yamls]# cat vadapav.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: vadapav
+  namespace: citiuscloud
+  labels:
+    app: prod1
+    disk: ssdtype
+  annotations:
+    version: image1.1
+spec:
+  containers:
+  - name: c1
+    image: httpd
+    ports:
+    - name: webserverport
+      protocol: "TCP"
+      containerPort: 80
+    resources:
+      requests:
+        cpu: 10m
+        memory: 20Mi
+      limits:
+        cpu: 20m
+        memory: 40Mi
